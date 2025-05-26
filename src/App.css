@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.home{
+  padding: 20px;
+  background-color: rgb(234, 243, 252);
+  margin: 50px 100px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.new-registration{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(1, 58, 180);
+  color: white;
+  position: relative;
+
+  &:hover{
+    background-color: rgb(1, 37, 116);
+  }
+}
+
+.edit{
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 80px;
+
+  &:hover{
+    background-color: blue;
+    color: white;
+  }
+}
+
+.delete{
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 80px;
+
+  &:hover{
+    background-color: red;
+    color: white;
+  }
+}
+
+
+.table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  table{
+    border-collapse: collapse;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  
+    td, th{
+      border: 1px solid black;
+      padding: 5px 20px;
+    }
+  }
+}
+
+.form{
+  padding: 10px;
+
+  form{
+    display: flex;
+    flex-direction: column;
+
+    .input{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      width: fit-content;
+      border: 1px solid;
+      border-radius: 5px;
+      margin: 5px;
+
+      label{
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+
