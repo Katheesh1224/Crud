@@ -1,6 +1,17 @@
 import React from "react";
 
 const Students = () => {
+
+    // const students = [
+    //     {
+    //         name: "Tony Stark",
+    //         reg: "2020CSC027",
+    //         course
+
+    //     }
+    // ];
+
+
     return(
         <div className="table">
             <h2>Registered Student Details</h2>

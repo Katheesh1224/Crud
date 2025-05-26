@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Students from "./components/students.jsx";
 import Form from "./components/Form.jsx";
 
 
 const Home = () => {
+
+    const [showModel, setShowModel] = useState(false);
+
+    const openModel = () => setShowModel(true);
+    const closeModel = () => setShowModel(false);
+
     return(
         <div className="home">
             <header>
@@ -12,9 +18,14 @@ const Home = () => {
 
             <Students/>
 
-            <button className="new-registration">Add New Student</button>
+            <button className="new-registration" onClick={openModel}>Add New Student</button>
 
-            <Form/>
+            {showModel && (
+                <div className="modal-overlay">
+                    <Form onClose={closeModel}/>
+                </div>
+            )}
+
         </div>
     );
 }
